@@ -1,0 +1,8 @@
+# author: jianbin.hong.cn@gmail.com
+# date	: 2015/09/10
+# This file is intruduction for cralwing of website http://tvgdb.duowan.com/
+
+- Main website: http://tvgdb.duowan.com/
+
+- Main procedure/step when this task is start:
+	1) the main page of game page is gotten by game type (page result is sorted by default); the reason we get this page is that each type of game have its number of game, we need to get this info first, before we could do next; SCRIPT: $SCRIPT/

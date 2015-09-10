@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<script>var stime = new Date();</script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" />
+<link rel="stylesheet" type="text/css" href="/assets/d503b67e/autocomplete/jquery.autocomplete.css" />
+<script type="text/javascript" src="/assets/d503b67e/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/d503b67e/jquery.bgiframe.js"></script>
+<script type="text/javascript" src="/assets/d503b67e/jquery.ajaxqueue.js"></script>
+<script type="text/javascript" src="/assets/d503b67e/jquery.autocomplete.js"></script>
+<title>PSV游戏下载 (PSV游戏图鉴) - 多玩PSV游戏产品库 - PSV游戏下载|PSV中文游戏</title>
+<meta content="多玩PSV游戏产品库，提供最新最快的PSV游戏下载，同时提供最新的PSV游戏新闻、图片、视频、攻略等信息，为你玩转PSV游戏提供最优价值的参考。" name="Description" />
+<meta content="PSV游戏下载、PSV中文游戏、PSV游戏图鉴、PSV游戏推荐、PSV经典游戏、PSV最新游戏排行榜" name="Keywords" />
+<link rel="stylesheet" type="text/css" href="http://tv.duowan.com/s/1211/tv-common.css"/><!-- 新顶部样式，请置于global前 -->
+<link rel="stylesheet" type="text/css" href="/themes/tvg_duowan/css/common/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/themes/tvg_duowan/css/psv/global.css"/>
+<link rel="stylesheet" type="text/css" href="/themes/tvg_duowan/css/common/common.css"/>
+<script src="http://www.duowan.com/public/assets/sys/js/jquery.js?02131514.js"></script>
+<script type="text/javascript" src="http://www.duowan.com/assets/js/dww3.js"></script> 
+<script type="text/javascript">
+_hiido_wid=["psvdb"];
+</script> 
+<style>#main .item dt img{height:223px;}</style>
+</head>
+<body>
+<!-- 站点导航{ -->
+<script type="text/javascript" src="http://www.duowan.com/public/s/i/navbar/navbar.js?20110126"></script>
+
+<!-- }站点导航 -->
+<div id="index">
+	<div id="tv-header">
+		
+		<div class="topnav">
+			<a href="http://tv.duowan.com">TV首页</a>
+			<a href="http://tvgdb.duowan.com">游戏库</a>
+			<a href="http://psv.duowan.com">PSV</a>
+			<a href="http://psp.duowan.com">PSP</a>
+			<a href="http://3ds.duowan.com">3DS</a>
+			<a href="http://nds.duowan.com">NDS</a>
+			<a href="http://tv.duowan.com/ps3/">PS3</a>
+			<a href="http://tv.duowan.com/xbox360/">XBOX360</a>
+			<a href="http://tv.duowan.com/wiiu/">WiiU</a>
+			<a href="http://tv.duowan.com/wii/">Wii</a>
+			<a href="http://tvgdb.duowan.com/gba/dl/">GBA</a>
+			<a href="http://an.duowan.com">安卓</a>
+			<a href="http://apple.duowan.com">苹果</a>
+		</div>
+			
+		<div class="logo"><a title="返回首页">返回首页</a></div>
+			
+		<!-- 搜索{ -->
+		<div class="search">
+			<form id="search_form" name="search_form" target="_blank" action="http://tvgdb.duowan.com/psv/search.html" method="get">				<input type="hidden" name="search_state" value="0" />
+				<ul class="search_mid">
+					<li class="search_s">
+						<p class="search_s1">
+							<select name="search_alias" id="search_alias" class="search_select">
+								<option value="0">全机种</option>
+																<option value="9" selected=selected>PSV</option>
+																<option value="4" >3DS</option>
+																<option value="2" >PSP</option>
+																<option value="23" >PS4</option>
+																<option value="7" >PS3</option>
+																<option value="24" >XBOXONE</option>
+																<option value="11" >XBOX360</option>
+																<option value="22" >WiiU</option>
+																<option value="12" >Wii</option>
+																<option value="13" >NDS</option>
+																<option value="14" >GBA</option>
+																<option value="17" >PS</option>
+																<option value="21" >PC</option>
+																<option value="15" >FC</option>
+															</select>
+						</p>
+					</li>
+					<li class="search_i">
+						<input class="search_input" id="s_key" type="text" name="s_key" />					</li>
+					<li class="search_b"><input type="button" class="btn" value="搜索" onClick="jQuery('#search_form').submit()"></li>
+				</ul>
+				<script>
+					jQuery('#search_alias').change(function(){
+						jQuery("#s_key").unautocomplete();
+						jQuery("#s_key").legacyautocomplete("/gameBase/suggestion",{'selectFirst':false,'extraParams':{'alias':$(this).val()},'multiple':false});
+					});
+				</script>
+			</form>		</div>
+		<!-- }搜索 -->
+	 
+	 
+		<!-- 下拉菜单{ -->
+		<div class="mod-menu" id="tv-menu">
+			<ul>
+				<li><a href="/" target="blank">TVGDB</a>	</li>
+								<li class="selected"><a href="http://tvgdb.duowan.com/psv" target="blank">PSV</a></li>
+								<li ><a href="http://tvgdb.duowan.com/3ds" target="blank">3DS</a></li>
+								<li ><a href="http://tvgdb.duowan.com/psp" target="blank">PSP</a></li>
+								<li ><a href="http://tvgdb.duowan.com/ps4" target="blank">PS4</a></li>
+								<li ><a href="http://tvgdb.duowan.com/ps3" target="blank">PS3</a></li>
+								<li ><a href="http://tvgdb.duowan.com/xboxone" target="blank">XBONE</a></li>
+								<li ><a href="http://tvgdb.duowan.com/xbox360" target="blank">XB360</a></li>
+								<li ><a href="http://tvgdb.duowan.com/wiiu" target="blank">WiiU</a></li>
+								<li ><a href="http://tvgdb.duowan.com/wii" target="blank">Wii</a></li>
+								<li ><a href="http://tvgdb.duowan.com/nds" target="blank">NDS</a></li>
+								<li ><a href="http://tvgdb.duowan.com/gba" target="blank">GBA</a></li>
+								<li ><a href="http://tvgdb.duowan.com/ps" target="blank">PS</a></li>
+								<li ><a href="http://tvgdb.duowan.com/pc" target="blank">PC</a></li>
+								<li ><a href="http://tvgdb.duowan.com/fc" target="blank">FC</a></li>
+							</ul>
+		</div>
+		
+		<script>KISSDW.showMenu("#tv-menu");</script>
+		<!-- }下拉菜单 -->
+	
+		<!-- 二级导航{ -->
+	
+		<div class="subnav">
+						<a target="_blank" href="http://tvgdb.duowan.com/psv?state=unsaled">游戏前瞻</a>			<a target="_blank" href="http://tvgdb.duowan.com/psv?area=1">PSV中文游戏</a>			<a target="_blank" href="http://tvgdb.duowan.com/psv?sort=view.desc">近期热门游戏</a>			<a target="_blank" href="http://tvgdb.duowan.com/psv?state=unsaled&amp;sort=view.desc">期待游戏排行榜</a>						<a target="_blank" href="http://tvgdb.duowan.com/psv?type=0&amp;area=0">所有PSV游戏</a>			<a target="blank" href="http://tv.duowan.com/s/db2011help.html#3">[教你找游戏]</a>
+						<a target="blank" href="http://tv.duowan.com/s/db2011help.html">[帮助]</a>
+			<a style="cursor: pointer;"onclick="addBookmark('多玩PSV游戏下载库','http://tvgdb.duowan.com/psv')"  target="_self">收藏本站</a>
+		</div>
+	
+		<!-- }二级导航 -->
+	</div><!--header -->
+    
+    
+              
+    
+	<div class="container">
+	<div id="content">
+		<div class="clearfix">
+	<!-- 面包屑导航模块{ -->
+		<div class="mod-crumbs mod-crumbs2" style="position:relative">
+			<div class="mod-bd">
+				<b>您的位置：</b><a href="http://www.duowan.com">多玩首页</a><span>&gt;</span>
+				<a href="http://tvgdb.duowan.com">TVGDB首页</a><span>&gt;</span>
+				<a href="http://psv.duowan.com">PSV频道</a><span>&gt;</span>				<a href="http://tvgdb.duowan.com/psv">PSV游戏资讯</a>			</div>
+			<div class="mod-ft" style="position:relative">
+				<ul class="sort" >
+                    <li class="tt">排序方式</li>
+					<li><a class="current" href="http://tvgdb.duowan.com/psv?sort=up.desc">按更新时间</a></li>
+					<li><a class=" desc" href="http://tvgdb.duowan.com/psv?sort=time">按发售日期</a></li>
+					<li><a class="" href="http://tvgdb.duowan.com/psv?sort=gs.desc">按GAMESPOT评分</a></li>
+					<li><a class="" href="http://tvgdb.duowan.com/psv?sort=view.desc">按玩家关注度</a></li>
+										<li><a class="" href="http://tvgdb.duowan.com/psv?sort=fm.desc">按FAMI通评分</a></li>
+															
+					
+					<li><a target="_blank" href="http://tvgdb.duowan.com/gameVersion/saleSearch?sy=2015&amp;ey=2015&amp;sm=09&amp;em=09&amp;sd=1&amp;ed=30&amp;gtype=9&amp;alias=psv"><Font color="red"><strong>新版本月前瞻</strong></Font></a></li>
+
+					<li class="btn"><b>显示方式：</b><span class="btn_sort_one"><a href="http://tvgdb.duowan.com/psv?sort=up" title="一栏" >一栏</a></span> 
+					<span class="btn_sort_three"><a title="三栏" href="http://tvgdb.duowan.com/psv?sort=up&grid=1" class="on">三栏</a></span></li>
+										
+				</ul>
+				<div class="subsort">
+										<a class="highlight" target="_blank" href="http://tvgdb.duowan.com/psv/new_2015_9.html">本月前瞻</a>										|<a target="_blank" href="http://tvgdb.duowan.com/psv/new_2008.html">2008年</a>										|<a target="_blank" href="http://tvgdb.duowan.com/psv/new_2009.html">2009年</a>										|<a target="_blank" href="http://tvgdb.duowan.com/psv/new_2010.html">2010年</a>										|<a target="_blank" href="http://tvgdb.duowan.com/psv/new_2011.html">2011年</a>										|<a target="_blank" href="http://tvgdb.duowan.com/psv/new_2012.html">2012年</a>										|<a target="_blank" href="http://tvgdb.duowan.com/psv/new_2013.html">2013年</a>										|<a target="_blank" href="http://tvgdb.duowan.com/psv/new_2014.html">2014年</a>										|<a target="_blank" href="http://tvgdb.duowan.com/psv/new_2015.html">2015年</a>									</div>
+							
+			</div>
+			<div class="mod-tips-s1 hide"><!-- 1栏提示信息{ -->
+            <div class="mod-tips-content" >
+                <p>点击按钮可以切换显示方式</p>
+                <a class="btn-close J_btnClose" style="cursor:pointer;" onclick="javascript:$(this).parent('div').parent('div').hide();">关闭</a>
+            </div>
+            <i class="arrow b"></i>
+        	</div> <!-- }1栏提示信息 -->
+            
+           <div class="mod-tips-s1 mod-tips-s3"><!-- 3栏提示信息{ -->
+            <div class="mod-tips-content">
+                <p>点击按钮可以切换显示方式</p>
+                <a class="btn-close J_btnClose"  style="cursor:pointer;" onclick="javascript:$(this).parent('div').parent('div').hide();">关闭</a>
+            </div>
+            <i class="arrow b"></i>
+        	</div> <!-- }3栏提示信息 -->
+		</div>
+		<!-- }面包屑导航模块 -->
+
+        
+       <!-- search_box -->
+        <div class="forms-box">
+<ul>
+<li>
+<b>类型</b>
+<span><a href="http://tvgdb.duowan.com/psv?t=0&type=0" 
+id="type_0" class="on">全部</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=1&type=1" 
+ id="type_1" class="">
+ 角色扮演</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=2&type=2" 
+ id="type_2" class="">
+ 即时战略</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=3&type=3" 
+ id="type_3" class="">
+ 策略</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=4&type=4" 
+ id="type_4" class="">
+ 射击</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=5&type=5" 
+ id="type_5" class="">
+ 动作</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=6&type=6" 
+ id="type_6" class="">
+ 格斗</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=7&type=7" 
+ id="type_7" class="">
+ 竞速</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=8&type=8" 
+ id="type_8" class="">
+ 模拟</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=9&type=9" 
+ id="type_9" class="">
+ 音乐</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=10&type=10" 
+ id="type_10" class="">
+ 休闲益智</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=11&type=11" 
+ id="type_11" class="">
+ 体育</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=12&type=12" 
+ id="type_12" class="">
+ 文字</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=13&type=13" 
+ id="type_13" class="">
+ 其他</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=14&type=14" 
+ id="type_14" class="">
+ 冒险</a></span>
+ <span><a href="http://tvgdb.duowan.com/psv?t=15&type=15" 
+ id="type_15" class="">
+ 卡片</a></span>
+</li>
+
+ <li class="even">
+<b>区域</b>
+	<span><a href="http://tvgdb.duowan.com/psv?area=0&a=0" 
+	class="on">全部</a>
+	</span>
+	<span><a href="http://tvgdb.duowan.com/psv?area=4&a=4" 
+	class="">日版</a>
+	</span>
+	<span><a href="http://tvgdb.duowan.com/psv?area=3&a=3" 
+	class="">美版</a>
+	</span>
+	<span><a href="http://tvgdb.duowan.com/psv?area=2&a=2" 
+	class="">欧版</a>
+	</span>
+	<span><a href="http://tvgdb.duowan.com/psv?area=1&a=1" 
+	class="">中文版</a>
+	</span>
+</li>
+
+<li>
+<b>状态</b>
+<span><a href="http://tvgdb.duowan.com/psv?state=0&search_state=0" 
+id="state_0" class="on">全部</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/psv?state=unsaled&search_state=unsaled" 
+id="state_unsaled" class="">未发售</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/psv?state=saled&search_state=saled" 
+id="state_saled" class="">已发售</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/psv?state=dl&search_state=dl" 
+id="state_dl" class="">已有下载</a>
+</span></li>
+
+ <li>
+<b>平台</b>
+<span><a href="http://tvgdb.duowan.com/psv?search_alias=0" class="on">全部</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/psv?search_alias=9" class="">PSV</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/3ds?search_alias=4" class="">3DS</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/psp?search_alias=2" class="">PSP</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/ps4?search_alias=23" class="">PS4</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/ps3?search_alias=7" class="">PS3</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/xboxone?search_alias=24" class="">XBOXONE</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/xbox360?search_alias=11" class="">XBOX360</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/wiiu?search_alias=22" class="">WiiU</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/wii?search_alias=12" class="">Wii</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/nds?search_alias=13" class="">NDS</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/gba?search_alias=14" class="">GBA</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/ps?search_alias=17" class="">PS</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/pc?search_alias=21" class="">PC</a>
+</span>
+<span><a href="http://tvgdb.duowan.com/fc?search_alias=15" class="">FC</a>
+</span>
+</li>
+
+
+</ul>
+</div>       <!-- end search_box -->
+       
+		<div id="main">
+						<div class="item">
+				<dl class="clearfix">
+					<dt>
+						<span><a target="_blank" href="http://tvgdb.duowan.com/psv/21786/4.html"><img src="http://s1.dwstatic.com/group1/M00/06/6A/066a98ce74b4cbbfc28c7be5e9a961697936.jpg" alt="" /></a>						
+						</span>
+                        <div class="clear"></div>
+                                                 <div class="download unable" style="width:190px;">
+                         						</div>
+					</dt>
+					<dd>
+						<h4><a target="_blank" href="http://tvgdb.duowan.com/psv/21786/4.html">雪之华 春季 日版</a></h4>
+						<ul>
+							<li>英文名称：<b>Yunohana SpRING!</b></li>
+							<li>开发厂商：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/dev/Otomate.html">Otomate</a></b></li>
+							<li>发行厂商：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/salor/Idea+Factory.html">Idea Factory</a></b></li>
+							<li>发售日期：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/saletime/2015-09-17.html">2015-09-17</a></b></li>
+							<li>游戏容量：<b></b></li>
+							<li>游戏类型：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/t/12.html">文字类</a></b></li>
+							<li>游戏官网：<b><a target="_blank" href="http://www.otomate.jp/yunohana_spring/">点击查看</a></b></li>
+                            <li>攻略资料：<b>0篇</b>
+                             	 游戏图片：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/21786/pic.html">9张</a></b> 
+                            	游戏视频：<b>0段</b>
+                            </li>
+                            <li style="padding-left:12px">浏览量：<b>740</b> </b></li>
+						</ul>
+                          <!--版本-->
+                         <div class="clear"></div>
+						<div class="version">
+							<span style="padding:0">选择版本：</span>
+							
+														
+                                                        
+                                                                                    <span class="jp">日版</span>
+                                                                                    
+                             
+                             
+					</div>
+                         <!--版本-->
+					</dd>
+				</dl>
+				<div class="extra">
+									<div class="point point2">
+						<strong><a target="_blank" href="http://tvgdb.duowan.com/psv/search/fm/32.html">32</a></strong>
+						<span>FAMI评分</span>
+						<p><a target="_blank" href="http://tvgdb.duowan.com/psv/search/fm/32.html">黄金殿堂</a>						</p>
+					</div>
+					                                       
+				</div>
+			</div><!--item -->
+						<div class="item">
+				<dl class="clearfix">
+					<dt>
+						<span><a target="_blank" href="http://tvgdb.duowan.com/psv/21774/4.html"><img src="http://s1.dwstatic.com/group1/M00/40/D8/40d8a2dc3b90e721e2199514dfcf7b204332.jpg" alt="" /></a>						
+						</span>
+                        <div class="clear"></div>
+                                                 <div class="download unable" style="width:190px;">
+                         						</div>
+					</dt>
+					<dd>
+						<h4><a target="_blank" href="http://tvgdb.duowan.com/psv/21774/4.html">东京阴阳师 天现寺桥怜篇 V版 日版</a></h4>
+						<ul>
+							<li>英文名称：<b>Tokyo Onmyouji: Tengen Jibashi - Rei no Baai - V Edition</b></li>
+							<li>开发厂商：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/dev/dramatic+create.html">dramatic create</a></b></li>
+							<li>发行厂商：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/salor/dramatic+create.html">dramatic create</a></b></li>
+							<li>发售日期：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/saletime/2015-09-17.html">2015-09-17</a></b></li>
+							<li>游戏容量：<b></b></li>
+							<li>游戏类型：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/t/12.html">文字类</a></b></li>
+							<li>游戏官网：<b><a target="_blank">点击查看</a></b></li>
+                            <li>攻略资料：<b>0篇</b>
+                             	 游戏图片：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/21774/pic.html">8张</a></b> 
+                            	游戏视频：<b>0段</b>
+                            </li>
+                            <li style="padding-left:12px">浏览量：<b>816</b> </b></li>
+						</ul>
+                          <!--版本-->
+                         <div class="clear"></div>
+						<div class="version">
+							<span style="padding:0">选择版本：</span>
+							
+														
+                                                        
+                                                                                    <span class="jp">日版</span>
+                                                                                    
+                             
+                             
+					</div>
+                         <!--版本-->
+					</dd>
+				</dl>
+				<div class="extra">
+									<div class="point point2">
+						<strong><a target="_blank" href="http://tvgdb.duowan.com/psv/search/fm/29.html">29</a></strong>
+						<span>FAMI评分</span>
+						<p><a target="_blank" href="http://tvgdb.duowan.com/psv/search/fm/29.html">殿堂外</a>						</p>
+					</div>
+					                                       
+				</div>
+			</div><!--item -->
+						<div class="item">
+				<dl class="clearfix">
+					<dt>
+						<span><a target="_blank" href="http://tvgdb.duowan.com/psv/21767/4.html"><img src="http://s1.dwstatic.com/group1/M00/E4/EF/e4ef5a1085498780ff3d465011bbe44f1188.jpg" alt="" /></a>						
+						</span>
+                        <div class="clear"></div>
+                                                 <div class="download unable" style="width:190px;">
+                         						</div>
+					</dt>
+					<dd>
+						<h4><a target="_blank" href="http://tvgdb.duowan.com/psv/21767/4.html">雷子 日版</a></h4>
+						<ul>
+							<li>英文名称：<b>Raishi</b></li>
+							<li>开发厂商：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/dev/Klon+Co.%2C+Ltd..html">Klon Co., Ltd.</a></b></li>
+							<li>发行厂商：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/salor/Klon+Co.%2C+Ltd..html">Klon Co., Ltd.</a></b></li>
+							<li>发售日期：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/saletime/2015-09-17.html">2015-09-17</a></b></li>
+							<li>游戏容量：<b></b></li>
+							<li>游戏类型：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/t/3.html">策略类</a></b></li>
+							<li>游戏官网：<b><a target="_blank" href="http://www.klon.co.jp/raishi/">点击查看</a></b></li>
+                            <li>攻略资料：<b>0篇</b>
+                             	 游戏图片：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/21767/pic.html">5张</a></b> 
+                            	游戏视频：<b>0段</b>
+                            </li>
+                            <li style="padding-left:12px">浏览量：<b>631</b> </b></li>
+						</ul>
+                          <!--版本-->
+                         <div class="clear"></div>
+						<div class="version">
+							<span style="padding:0">选择版本：</span>
+							
+														
+                                                        
+                                                                                    <span class="jp">日版</span>
+                                                                                    
+                             
+                             
+					</div>
+                         <!--版本-->
+					</dd>
+				</dl>
+				<div class="extra">
+				                                       
+				</div>
+			</div><!--item -->
+						<div class="item">
+				<dl class="clearfix">
+					<dt>
+						<span><a target="_blank" href="http://tvgdb.duowan.com/psv/21736/4.html"><img src="http://s1.dwstatic.com/group1/M00/93/DF/93dfc2f03414044841ec9fe68f7f0e182333.jpg" alt="" /></a>						
+						</span>
+                        <div class="clear"></div>
+                                                 <div class="download unable" style="width:190px;">
+                         						</div>
+					</dt>
+					<dd>
+						<h4><a target="_blank" href="http://tvgdb.duowan.com/psv/21736/4.html">七彩的轮回转世 日版</a></h4>
+						<ul>
+							<li>英文名称：<b>Nanairo Reincarnation</b></li>
+							<li>开发厂商：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/dev/Silky%60s.html">Silky`s</a></b></li>
+							<li>发行厂商：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/salor/Silky%60s.html">Silky`s</a></b></li>
+							<li>发售日期：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/saletime/2015-09-17.html">2015-09-17</a></b></li>
+							<li>游戏容量：<b></b></li>
+							<li>游戏类型：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/t/12.html">文字类</a></b></li>
+							<li>游戏官网：<b><a target="_blank">点击查看</a></b></li>
+                            <li>攻略资料：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/21736/article.html">2篇</a></b>
+                             	 游戏图片：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/21736/pic.html">12张</a></b> 
+                            	游戏视频：<b>0段</b>
+                            </li>
+                            <li style="padding-left:12px">浏览量：<b>1007</b> </b></li>
+						</ul>
+                          <!--版本-->
+                         <div class="clear"></div>
+						<div class="version">
+							<span style="padding:0">选择版本：</span>
+							
+														
+                                                        
+                                                                                    <span class="jp">日版</span>
+                                                                                    
+                             
+                             
+					</div>
+                         <!--版本-->
+					</dd>
+				</dl>
+				<div class="extra">
+									<div class="point point2">
+						<strong><a target="_blank" href="http://tvgdb.duowan.com/psv/search/fm/29.html">29</a></strong>
+						<span>FAMI评分</span>
+						<p><a target="_blank" href="http://tvgdb.duowan.com/psv/search/fm/29.html">殿堂外</a>						</p>
+					</div>
+					                                       
+				</div>
+			</div><!--item -->
+						<div class="item">
+				<dl class="clearfix">
+					<dt>
+						<span><a target="_blank" href="http://tvgdb.duowan.com/psv/21735/4.html"><img src="http://s1.dwstatic.com/group1/M00/63/C5/63c5ae17f9b93c60f93135969e7956b29995.jpg" alt="" /></a>						
+						</span>
+                        <div class="clear"></div>
+                                                 <div class="download unable" style="width:190px;">
+                         						</div>
+					</dt>
+					<dd>
+						<h4><a target="_blank" href="http://tvgdb.duowan.com/psv/21735/4.html">源氏恋绘卷 日版</a></h4>
+						<ul>
+							<li>英文名称：<b>Genji Koi Emaki</b></li>
+							<li>开发厂商：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/dev/Quinrose.html">Quinrose</a></b></li>
+							<li>发行厂商：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/salor/Quinrose.html">Quinrose</a></b></li>
+							<li>发售日期：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/saletime/2015-09-17.html">2015-09-17</a></b></li>
+							<li>游戏容量：<b></b></li>
+							<li>游戏类型：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/search/t/12.html">文字类</a></b></li>
+							<li>游戏官网：<b><a target="_blank" href="http://quinrose.com/game/genji/top.html">点击查看</a></b></li>
+                            <li>攻略资料：<b>0篇</b>
+                             	 游戏图片：<b><a target="_blank" href="http://tvgdb.duowan.com/psv/21735/pic.html">20张</a></b> 
+                            	游戏视频：<b>0段</b>
+                            </li>
+                            <li style="padding-left:12px">浏览量：<b>1042</b> </b></li>
+						</ul>
+                          <!--版本-->
+                         <div class="clear"></div>
+						<div class="version">
+							<span style="padding:0">选择版本：</span>
+							
+														
+                                                        
+                                                                                    <span class="jp">日版</span>
+                                                                                    
+                             
+                             
+					</div>
+                         <!--版本-->
+					</dd>
+				</dl>
+				<div class="extra">
+				                                       
+				</div>
+			</div><!--item -->
+						<!-- page number{ -->
+						<div class="mod-page right rounded"><div class="mod-page-bd" id="yw0"><a class="first hidden" href="http://tvgdb.duowan.com/psv">首页</a>
+<a class="prev hidden" href="http://tvgdb.duowan.com/psv">&lt;&lt;</a>
+<a class=" current" href="http://tvgdb.duowan.com/psv">1</a>
+<a class="" href="http://tvgdb.duowan.com/psv?page=2">2</a>
+<a class="" href="http://tvgdb.duowan.com/psv?page=3">3</a>
+<a class="" href="http://tvgdb.duowan.com/psv?page=4">4</a>
+<a class="" href="http://tvgdb.duowan.com/psv?page=5">5</a>
+<a class="" href="http://tvgdb.duowan.com/psv?page=6">6</a>
+<a class="" href="http://tvgdb.duowan.com/psv?page=7">7</a>
+<a class="" href="http://tvgdb.duowan.com/psv?page=8">8</a>
+<a class="" href="http://tvgdb.duowan.com/psv?page=9">9</a>
+<a class="" href="http://tvgdb.duowan.com/psv?page=10">10</a>
+<a class="next" href="http://tvgdb.duowan.com/psv?page=2">&gt;&gt;</a>
+<a class="last" href="http://tvgdb.duowan.com/psv?page=187">末页</a></div></div>			<!-- }page number -->
+			
+		</div>
+        
+		<!-- sidebar -->
+		<div class="portlet" id="yw1">
+<div class="portlet-content">
+<div id="aside">
+	<script src="http://gt.yy.com/api/g?loc=dwdjc1"></script>
+    <div class="blank10"></div>
+		<!-- 列表模块Latest{ -->
+		<div class="game-info" id="mod-tab1">
+		<div class="hd">
+			<ul class="tab-nav J_nav">
+									<li class="hover"><span>最新入库游戏</span></li>
+					<li class=""><span>最新下载游戏</span></li>							</ul>  
+		</div>
+
+		<div class="bd">
+			<ul class="J_content">
+									<li class="" style="display: list-item;">
+						<div class="portlet" id="yw2">
+<div class="portlet-content">
+<ol>
+	<li><span><em>2015-09-10</em></span>
+	<a title="歌之王子殿下 音乐3 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21876/4.html">歌之王子殿下 音乐...</a>	</li>
+	<li><span><em>2015-09-10</em></span>
+	<a title="假面骑士 战骑大战 创生 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21873/4.html">假面骑士 战骑大战...</a>	</li>
+	<li><span><em>2015-09-09</em></span>
+	<a title="章鱼奶爸 请不要叫我章鱼 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21869/4.html">章鱼奶爸 请不要叫...</a>	</li>
+	<li><span><em>2015-09-08</em></span>
+	<a title="Superbeat Xonic 中文版" target="_blank" href="http://tvgdb.duowan.com/psv/21226/1.html">Superbeat...</a>	</li>
+	<li><span><em>2015-09-08</em></span>
+	<a title="电击文库 巅峰格斗者再燃 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21865/4.html">电击文库 巅峰格斗...</a>	</li>
+</ol></div>
+</div>					</li>
+
+					<li class="hide" style="display: none;">
+						<div class="portlet" id="yw3">
+<div class="portlet-content">
+<ol>
+	<li><span><em>2015-05-14</em></span>
+	<a title="乐高忍者 影子浪人 美版" target="_blank" href="http://tvgdb.duowan.com/psv/20661/3.html">乐高忍者 影子浪人（...</a></li>
+	<li><span><em>2015-05-14</em></span>
+	<a title="乐高忍者 影子浪人 欧版" target="_blank" href="http://tvgdb.duowan.com/psv/20661/2.html">乐高忍者 影子浪人（...</a></li>
+</ol></div>
+</div>					</li>
+							</ul>
+
+
+		</div>
+	</div>
+		<script>
+		KISSDW.tab("#mod-tab1", "hover");
+	</script>   
+		<!-- }列表模块Latest End -->   
+	
+		<!-- 列表模块Rank{ -->
+		<div class="game-info" id="mod-tab2">
+		<div class="hd">
+			<ul class="tab-nav J_nav">
+									<li class="hover"><span>本周关注排名</span></li>
+					<li class=""><span>本周下载排名</span></li>							</ul>  
+		</div>
+
+		<div class="bd">
+			<ul class="J_content">
+									<li style="display: list-item;">
+						<div class="portlet" id="yw4">
+<div class="portlet-content">
+<ol>
+<li><span>浏览量：<em>1307</em></span>
+<a title="东京喰种JAIL 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21138/4.html">东京喰种JAIL（...</a></li>
+<li><span>浏览量：<em>1025</em></span>
+<a title="怪物猎人 边境G 中文版" target="_blank" href="http://tvgdb.duowan.com/psv/18674/1.html">怪物猎人 边境G（...</a></li>
+<li><span>浏览量：<em>910</em></span>
+<a title="闪乱神乐 夏日对决 少女们的选择 中文版" target="_blank" href="http://tvgdb.duowan.com/psv/20179/1.html">闪乱神乐 夏日对决...</a></li>
+<li><span>浏览量：<em>843</em></span>
+<a title="生化危机 启示录2 中文版" target="_blank" href="http://tvgdb.duowan.com/psv/21304/1.html">生化危机 启示录2...</a></li>
+<li><span>浏览量：<em>835</em></span>
+<a title="牙斗 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21846/4.html">牙斗（日）</a></li>
+</ol>
+</div>
+</div>	
+					</li>
+					<li class="hide" style="display: none;">
+						<div class="portlet" id="yw5">
+<div class="portlet-content">
+<ol>
+<li><span><!--下载量：--><em></em></span>
+<a title="乐高忍者 影子浪人 美版" target="_blank" href="http://tvgdb.duowan.com/psv/20661/3.html">乐高忍者 影子浪人（...</a></li>
+<li><span><!--下载量：--><em></em></span>
+<a title="乐高忍者 影子浪人 欧版" target="_blank" href="http://tvgdb.duowan.com/psv/20661/2.html">乐高忍者 影子浪人（...</a></li>
+</ol>
+</div>
+</div>					</li>
+							</ul>
+
+
+		</div>
+	</div>
+	<!-- }列表模块Rank End -->   
+		<script>
+		KISSDW.tab("#mod-tab2", "hover");
+	</script>   
+			
+		<!-- 列表模块 sale{ -->
+		<div class="mod-list">
+			<div class="mod-hd">
+				<h3><span>近期游戏发售表</span></h3>
+				<a style="float:right;" href="http://tvgdb.duowan.com/psv/new_2015_9.html">&raquo;更多</a>			</div>
+			<div class="mod-bd">
+				<div class="portlet" id="yw6">
+<div class="portlet-content">
+<ol class="game-table">
+	<li><span><em>2015-09-11</em></span>
+	<a title="章鱼奶爸 请不要叫我章鱼 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21869/4.html">章鱼奶爸 请不要叫...</a></li>
+	<li><span><em>2015-09-15</em></span>
+	<a title="地球防卫军2 携带版V2 美版" target="_blank" href="http://tvgdb.duowan.com/psv/19896/3.html">地球防卫军2 携带...</a></li>
+	<li><span><em>2015-09-17</em></span>
+	<a title="生化危机 启示录2 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21304/4.html">生化危机 启示录2...</a></li>
+	<li><span><em>2015-09-17</em></span>
+	<a title="战国无双4 帝国 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21391/4.html">战国无双4 帝国（...</a></li>
+	<li><span><em>2015-09-17</em></span>
+	<a title="生化危机 启示录2 中文版" target="_blank" href="http://tvgdb.duowan.com/psv/21304/1.html">生化危机 启示录2...</a></li>
+	<li><span><em>2015-09-17</em></span>
+	<a title="境界触发者 无界任务 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21426/4.html">境界触发者 无界任...</a></li>
+	<li><span><em>2015-09-17</em></span>
+	<a title="天才麻将少女 全国篇 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21461/4.html">天才麻将少女 全国...</a></li>
+	<li><span><em>2015-09-17</em></span>
+	<a title="在天津御空之中 云的彼岸 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21734/4.html">在天津御空之中 云...</a></li>
+	<li><span><em>2015-09-17</em></span>
+	<a title="源氏恋绘卷 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21735/4.html">源氏恋绘卷（日）</a></li>
+	<li><span><em>2015-09-17</em></span>
+	<a title="七彩的轮回转世 日版" target="_blank" href="http://tvgdb.duowan.com/psv/21736/4.html">七彩的轮回转世（日...</a></li>
+</ol></div>
+</div>			</div>
+		</div>
+	<!-- }列表模块 sale end -->  
+	
+
+		<!-- 列表模块 今日焦点 focus{ -->
+	<div class="mod-list">
+		<div class="mod-hd">
+			<h3><span>PSV今日焦点</span></h3>
+		</div>
+							<iframe src="http://psv.duowan.com/1110/m_183479932886.html" frameborder="0" scrolling="no" 
+				marginwidth="0" marginheight="0" border="0" width="248" height="245">
+			</iframe>
+			</div>
+	<!-- }列表模块 focus end -->
+		
+		<!-- 列表模块  热门推荐{ -->
+			<iframe src="http://tv.duowan.com/1110/m_183564131006.html" frameborder="0" scrolling="no" 
+			marginwidth="0" marginheight="0" border="0" width="250" height="446"></iframe>
+		<!-- }列表模块 -->
+		
+	</div>
+<script src="http://sz.duowan.com/resource/adstat.1.0.0.js"></script></div>
+</div>		<!-- sidebar -->
+	</div>
+	</div><!-- content -->
+</div>
+</div>
+<!-- Foot-->
+<script type="text/javascript" src="http://www.duowan.com/assets/js/duowanFooter.js" charset="utf-8"></script>
+<!-- }Foot -->
+<style>#footer{ margin:0;}</style>
+<script type="text/javascript">
+function addBookmark(title,url){
+	//var _title=document.title;
+	//var _url=document.location.href;
+	var _title = title;
+	var _url = url;
+	if (window.sidebar) { 
+		window.sidebar.addPanel(_title, _url,""); 
+	}else if( document.all ) {
+		window.external.AddFavorite( _url, _title);
+	}else if( window.opera && window.print ) {
+		return true;
+	}
+}
+</script>
+<!--<script type="text/javascript" charset="utf-8" src="http://hudong.duowan.com/gem-application/app-host.js"></script>-->
+<script>
+var img = new Image(); 
+img.src = "http://wsp.hiido.com/c.gif?8="+(new Date()-stime);
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?9522de9e79cab1bdb926b8ddf77fd9e9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>$('body').append('<div style="position: fixed;right: 0px;bottom: 400px;"><a target="_blank" href="http://ma.duowan.com/hd/down/"><img src="http://img.dwstatic.com/ma/app/mafloat.jpg" /></a></div>');</script>
+<script src="http://assets.dwstatic.com/amkit/entry.js" data-entry="p/letv/main"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery("#s_key").legacyautocomplete("http://tvgdb.duowan.com/gameBase/suggestion?alias=psv",{'selectFirst':false,'extraParams':{'alias':9},'multiple':false});
+});
+/*]]>*/
+</script>
+</body>
+</html>
